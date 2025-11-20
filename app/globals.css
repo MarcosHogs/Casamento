@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-great-vibes: 'Great Vibes', cursive;
+}
+
+@layer base {
+  body {
+    @apply bg-weddingBlue-50 text-weddingBlue-900 dark:bg-slate-900 dark:text-weddingBlue-50 transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg dark:bg-slate-800/70 dark:border-slate-700/30;
+  }
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-sm border border-white/40 shadow-xl rounded-3xl dark:bg-slate-800/80 dark:border-slate-700/50;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-weddingBlue-600 to-weddingBlue-400 dark:from-weddingBlue-300 dark:to-weddingBlue-100;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-weddingBlue-50 dark:bg-slate-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-weddingBlue-300 rounded-full hover:bg-weddingBlue-400 dark:bg-slate-700 dark:hover:bg-slate-600;
+}
