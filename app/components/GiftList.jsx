@@ -160,7 +160,7 @@ function GiftCard({ item, isSelected, isTaken, toggleGift }) {
           alt={item.name}
           loading="lazy"
           onLoad={() => setLoaded(true)}
-          className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${loaded ? "opacity-100" : "opacity-0"
+          className={`w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-110 ${loaded ? "opacity-100" : "opacity-0"
             }`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-6">
@@ -192,10 +192,10 @@ function GiftCard({ item, isSelected, isTaken, toggleGift }) {
             disabled={isTaken}
             onClick={() => toggleGift && toggleGift(item)}
             className={`w-full py-3 px-4 rounded-xl font-semibold transition-colors flex items-center justify-center gap-2 ${isTaken
-                ? "bg-slate-200 dark:bg-slate-700 text-slate-400 dark:text-slate-500 cursor-not-allowed"
-                : isSelected
-                  ? "bg-weddingBlue-600 text-white hover:bg-weddingBlue-700"
-                  : "bg-weddingBlue-50 dark:bg-slate-700 hover:bg-weddingBlue-100 dark:hover:bg-slate-600 text-weddingBlue-700 dark:text-weddingBlue-200 group-hover:bg-weddingBlue-600 group-hover:text-white dark:group-hover:bg-weddingBlue-600 dark:group-hover:text-white"
+              ? "bg-slate-200 dark:bg-slate-700 text-slate-400 dark:text-slate-500 cursor-not-allowed"
+              : isSelected
+                ? "bg-weddingBlue-600 text-white hover:bg-weddingBlue-700"
+                : "bg-weddingBlue-50 dark:bg-slate-700 hover:bg-weddingBlue-100 dark:hover:bg-slate-600 text-weddingBlue-700 dark:text-weddingBlue-200 group-hover:bg-weddingBlue-600 group-hover:text-white dark:group-hover:bg-weddingBlue-600 dark:group-hover:text-white"
               }`}
           >
             {isTaken ? <Lock size={18} /> : <GiftIcon size={18} />}

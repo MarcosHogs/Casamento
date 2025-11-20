@@ -79,19 +79,19 @@ export default function Home() {
           <SectionTitle icon={<Heart className="w-6 h-6" />} title="Nossa História" />
           <div className="grid md:grid-cols-3 gap-8">
             <StoryCard
-              year="2018"
-              title="O Primeiro Encontro"
-              desc="Nos conhecemos em um café no centro da cidade. Um olhar tímido e um sorriso mudaram tudo."
+              year="2024"
+              title="O Início"
+              desc="Tudo começou de maneira inesperada: dois colegas de trabalho e uma amizade que surgiu naturalmente. Em maio, nosso primeiro encontro foi simples, bonito e verdadeiro."
             />
             <StoryCard
-              year="2021"
-              title="O Pedido"
-              desc="Sob a luz do luar na praia de Pajuçara, ele fez a pergunta mais importante de nossas vidas."
+              year="2024"
+              title="O Namoro"
+              desc="Em dezembro, dissemos nosso primeiro “sim”, percebemos que aquele sentimento discreto já tinha se tornado um amor enorme, seguro e cheio de propósitos."
             />
             <StoryCard
               year="2025"
               title="O Grande Dia"
-              desc="Agora, estamos prontos para escrever o próximo capítulo da nossa história ao lado de vocês."
+              desc="Em setembro, escolhemos dividir a vida. Agora, celebramos nossa história, prontos para viver uma vida inteira lado a lado, com o mesmo brilho nos olhos."
             />
           </div>
         </section>
