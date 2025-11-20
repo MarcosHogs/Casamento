@@ -57,8 +57,8 @@ export default function Home() {
           <h1 className="text-7xl md:text-9xl font-script text-weddingBlue-800 dark:text-weddingBlue-100 drop-shadow-sm">
             Simone & Marcos
           </h1>
-          <p className="text-lg md:text-xl text-weddingBlue-700 dark:text-weddingBlue-200 max-w-lg mx-auto font-light">
-            "O amor é paciente, o amor é bondoso. Tudo sofre, tudo crê, tudo espera, tudo suporta."
+          <p className="text-lg md:text-xl text-weddingBlue-700 dark:text-weddingBlue-200 max-w-2xl mx-auto font-light">
+            "O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. Não maltrata, não procura seus interesses, não se ira facilmente, não guarda rancor. O amor não se alegra com a injustiça, mas se alegra com a verdade. Tudo sofre, tudo crê, tudo espera, tudo suporta." — 1 Coríntios 13
           </p>
 
           <div className="pt-10">
