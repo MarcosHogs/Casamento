@@ -1,6 +1,6 @@
 "use client"
 
-import Head from "next/head"
+
 import { useState } from "react"
 import { MapPin, Gift, Calendar, Heart, Music, Camera } from "lucide-react"
 import Countdown from "./components/Countdown"
@@ -26,13 +26,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col font-sans overflow-x-hidden">
-      <Head>
-        <title>Simone & Marcos — Nosso Casamento</title>
-        <meta
-          name="description"
-          content="Simone e Marcos - Casamento 20 de dezembro, Igreja Matriz São Vicente de Paulo, Maceió"
-        />
-      </Head>
+
 
       {/* NAVBAR */}
       <nav className="fixed top-0 left-0 right-0 z-50 p-4 flex justify-between items-center pointer-events-none">
@@ -112,9 +106,6 @@ export default function Home() {
                 <Calendar className="w-4 h-4" />
                 <span>20 de Dezembro de 2025 às 17:00</span>
               </div>
-              <p className="text-sm text-weddingBlue-600 dark:text-weddingBlue-400 italic">
-                A recepção será realizada no salão de festas ao lado da igreja logo após a cerimônia.
-              </p>
             </div>
           </div>
           <div className="h-[400px] rounded-3xl overflow-hidden shadow-xl border-4 border-white dark:border-slate-700">
